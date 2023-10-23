@@ -1,36 +1,51 @@
 import './style.js';
-import { Container, Links } from './style.js';
+import { Container, Links, Content } from './style.js';
 
 import { Tag } from '../../components/tag/index.jsx'
 import { Section } from '../../components/section/index.jsx'
 import { Header } from '../../components/header/index.jsx';
 import { Button } from '../../components/button/index.jsx';
+import { ButtonText } from '../../components/buttonText/index.jsx'
 
 
-export function Details(){
+export function Details() {
   return (
 
     <Container>
+      <Header />
 
-      <Header/>
+      <main>
+        <Content>
+          <ButtonText title="Excluir Nota" />
 
-      <Section title = "Links Úteis" >
+          <h1>
+            Introdução ao React.
+          </h1>
 
-        <Links>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic at, eum ab aliquid numquam assumenda, doloribus doloremque tenetur omnis velit delectus ullam pariatur aliquam quam, quae aspernatur. Quibusdam, eaque ipsum?
+          </p>
 
-          <li><a href="#">www.rocketseat.com.br/</a></li>
-          <li><a href="#">www.rocketseat.com.br/</a></li>
+          <Section title="Links Úteis" >
 
-        </Links>
-        
-      </Section>
+            <Links>
 
-      <Section title = "Marcadores" >
-        <Tag title="React.js" />
-        <Tag title="Node.js" />
-      </Section>
+              <li><a href="#">www.rocketseat.com.br/</a></li>
+              <li><a href="#">www.rocketseat.com.br/</a></li>
 
-      <Button title="Voltar"/>
+            </Links>
+
+          </Section>
+
+          <Section title="Marcadores" >
+            <Tag title="React.js" />
+            <Tag title="Node.js" />
+          </Section>
+
+          <Button title="Voltar" />
+
+        </Content>
+      </main>
 
     </Container>
   )
