@@ -51,10 +51,17 @@ export const Search = styled.div `
 
 export const Content = styled.div `
     grid-area: content;
-    background-color: pink;
+    padding: 0 64px;
+    overflow: auto;
 `;
 
 export const NewNote = styled.button `
     grid-area: newnote;
-    background-color: green;
+    background-color: ${({theme}) => theme.COLORS.ORANGE};
+    border: none;
+
+    > h1{
+        font-weight: 400;
+        font-size: 16px;
+    }
 `;
