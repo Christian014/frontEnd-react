@@ -1,15 +1,22 @@
 import { Container, Form, BackgroundImg } from "./style";
-import { FiLogIn, FiMail, FiLock } from "react-icons/fi";
+import { FiLogIn, FiMail, FiLock, FiUser } from "react-icons/fi";
 import { Button } from "../../components/button/index";
 import { Input } from "../../components/input/index";
 
-export function SigIn(){
+export function SigUp(){
     return (
         <Container>
+            <BackgroundImg/>
             <Form>
                 <h1>Rocket Notes</h1>
                 <p>Aplicação Para Salvar e Gerenciar Seus Links Uteis</p>
-                <h2>Faca Seu Login</h2>
+                <h2>Crie Sua Conta</h2>
+
+
+                <Input placeholder="Nome"
+                    type="text"
+                    icon={FiUser}
+                />
 
                 <Input placeholder="Email"
                     type="text"
@@ -20,14 +27,14 @@ export function SigIn(){
                     icon={FiLock}
                 />
                 
-                <Button title="Entrar" />
+                <Button title="Cadastrar" />
 
                 <a href="#">
-                    criar conta
+                    Voltar para Login
                 </a>
             </Form>
 
-            <BackgroundImg/>
+            
         </Container>
     );
 };
