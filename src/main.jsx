@@ -7,6 +7,7 @@ import { SigUp } from './pages/sigUp/index'
 import { Profile } from './pages/profile/index'
 import theme from './styles/theme'
 import CreateGlobalStyle from './styles/global'
+import { New } from './pages/new'
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -14,7 +15,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 
     <ThemeProvider theme = { theme }>
       <CreateGlobalStyle />
-      <Profile/>
+      <New/>
     </ThemeProvider>
 
   </React.StrictMode>,
