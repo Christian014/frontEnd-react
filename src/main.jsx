@@ -1,13 +1,14 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
+import React from 'react';
+import ReactDOM from 'react-dom/client';
 
-import { Home } from './pages/home/index'
-import { ThemeProvider } from 'styled-components'
-import { SigUp } from './pages/sigUp/index'
-import { Profile } from './pages/profile/index'
-import theme from './styles/theme'
-import CreateGlobalStyle from './styles/global'
-import { New } from './pages/new'
+import { New } from './pages/new';
+import theme from './styles/theme';
+import { Home } from './pages/home/index';
+import { SigUp } from './pages/sigUp/index';
+import CreateGlobalStyle from './styles/global';
+import { Profile } from './pages/profile/index';
+import { ThemeProvider } from 'styled-components';
+import { Routes } from './routes/index';
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -15,7 +16,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 
     <ThemeProvider theme = { theme }>
       <CreateGlobalStyle />
-      <New/>
+      <Routes/>
     </ThemeProvider>
 
   </React.StrictMode>,

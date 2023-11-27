@@ -1,8 +1,10 @@
-import { Header } from "../../components/header/index";
+import { Link } from "react-router-dom";
 import { Container, Form } from "./style";
 import { Input } from "../../components/input/index";
-import { TextArea } from "../../components/TextArea/index";
+import { Button } from "../../components/button/index";
+import { Header } from "../../components/header/index";
 import { Section } from "../../components/section/index";
+import { TextArea } from "../../components/TextArea/index";
 import { NoteItem } from "../../components/noteItem/index";
 
 export function New(){
@@ -14,7 +16,7 @@ export function New(){
             <Form>
                 <header>
                     <h1>Criar Nota</h1>
-                    <a href="/">Voltar</a>
+                    <Link to="/">Voltar</Link>
                 </header>
 
                 <Input placeholder="Titulo"/>
@@ -24,6 +26,16 @@ export function New(){
                     <NoteItem value="www.youtube.com"/>
                     <NoteItem value="Novo Link" isNew/>
                 </Section>
+
+                
+                <Section title="marcadores">
+                    <div className="tags">
+                        <NoteItem value="react"/>
+                        <NoteItem value="react" isNew/>
+                    </div>
+                </Section>
+
+                <Button title="Salvar" />
             </Form>
             </main>
         </Container>

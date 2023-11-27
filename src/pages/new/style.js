@@ -8,12 +8,21 @@ export const Container = styled.div `
     grid-template-rows: 105px auto;
     grid-template-areas: "Header"
                          "content";
+
+    
     
 `;
+
 
 export const Form = styled.form `
     max-width: 550px;
     margin: 38px auto;
+
+    .tags{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
 
     > header{
         display: flex;

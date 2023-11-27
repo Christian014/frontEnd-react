@@ -1,10 +1,10 @@
-import { Container, Brand, Menu, Search, Content, NewNote } from './style';
-import {FiPlus, FiSearch  } from "react-icons/fi";
-import { Section } from "../../components/section/index"
-import { Header } from '../../components/header/index';
-import { ButtonText } from '../../components/buttonText';
 import { Input } from '../../components/input';
+import {FiPlus, FiSearch  } from "react-icons/fi";
 import { Note } from "../../components/note/index"
+import { Header } from '../../components/header/index';
+import { Section } from "../../components/section/index"
+import { ButtonText } from '../../components/buttonText';
+import { Container, Brand, Menu, Search, Content, NewNote } from './style';
 
 export function Home(){
 
@@ -40,7 +40,7 @@ export function Home(){
                 </Section>
             </Content>
             
-            <NewNote>
+            <NewNote to="/new">
                         <h1>+ incluir nota</h1>
             </NewNote>
             
